@@ -12,14 +12,14 @@ export class AudioList extends Component {
           dim.width=Dimensions.get('window').width;
           dim.height=70;
           break;
-          default:
-          dim.width=0;
-          dim.height=0;
+        //  ` default:
+        //   dim.width=1;
+        //   dim.height=1;`
       }
    
-  })
+  });
   rowRenderer=(type,item)=>{
-    console.log(item,item[0].filename,"TESTING THE ITEM COMING");
+    console.log(item,"TESTING THE ITEM COMING");
     return <Text>{item.filename}</Text>
   }
   render() {
